@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kvsoftware.rxkotlin.home.HomeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_basicFragment"
+            app:destination="@id/basicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_debounceFragment"
+            app:destination="@id/debounceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basicFragment"
+        android:name="com.kvsoftware.rxkotlin.basic.BasicFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_basic" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.kvsoftware.rxkotlin.map.MapFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/debounceFragment"
+        android:name="com.kvsoftware.rxkotlin.debounce.DebounceFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_debounce" />
+
+</navigation>
