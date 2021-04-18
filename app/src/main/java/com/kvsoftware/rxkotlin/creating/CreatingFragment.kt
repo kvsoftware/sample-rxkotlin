@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.basic
+package com.kvsoftware.rxkotlin.creating
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,22 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import com.kvsoftware.rxkotlin.databinding.FragmentBasicBinding
+import com.kvsoftware.rxkotlin.databinding.FragmentCreatingBinding
 
-class BasicFragment : Fragment() {
+class CreatingFragment : Fragment() {
 
-    private var fragmentBasicBinding: FragmentBasicBinding? = null
+    private var fragmentCreatingBinding: FragmentCreatingBinding? = null
 
-    private val viewModel: BasicViewModel by viewModels()
+    private val viewModel: CreatingViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentBasicBinding.inflate(inflater, container, false)
-        fragmentBasicBinding = binding
+        val binding = FragmentCreatingBinding.inflate(inflater, container, false)
+        fragmentCreatingBinding = binding
         return binding.root
     }
 
@@ -31,7 +30,7 @@ class BasicFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        fragmentBasicBinding = null
+        fragmentCreatingBinding = null
         super.onDestroyView()
     }
 }

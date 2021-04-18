@@ -11,8 +11,8 @@
         android:label="Blank"
         tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_basicFragment"
-            app:destination="@id/basicFragment" />
+            android:id="@+id/action_homeFragment_to_creatingFragment"
+            app:destination="@id/creatingFragment" />
         <action
             android:id="@+id/action_homeFragment_to_mapFragment"
             app:destination="@id/mapFragment" />
@@ -22,10 +22,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/basicFragment"
-        android:name="com.kvsoftware.rxkotlin.basic.BasicFragment"
+        android:id="@+id/creatingFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.CreatingFragment"
         android:label="Blank"
-        tools:layout="@layout/fragment_basic" />
+        tools:layout="@layout/fragment_creating" />
 
     <fragment
         android:id="@+id/mapFragment"

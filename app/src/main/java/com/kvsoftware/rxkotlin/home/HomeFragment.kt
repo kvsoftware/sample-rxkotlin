@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
         fragmentHomeBinding = binding
         binding.apply {
             buttonBasic.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeFragmentToBasicFragment()
+                val action = HomeFragmentDirections.actionHomeFragmentToCreatingFragment()
                 findNavController().navigate(action)
             }
             buttonMap.setOnClickListener {
