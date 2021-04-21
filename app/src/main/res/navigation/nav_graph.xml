@@ -28,6 +28,36 @@
         android:id="@+id/transformingFragment"
         android:name="com.kvsoftware.rxkotlin.transforming.TransformingFragment"
         android:label="Blank"
-        tools:layout="@layout/fragment_transforming" />
+        tools:layout="@layout/fragment_transforming">
+
+        <action
+            android:id="@+id/action_transformingFragment_to_bufferFragment"
+            app:destination="@id/bufferFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_flatMapFragment"
+            app:destination="@id/flatMapFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_groupByFragment"
+            app:destination="@id/groupByFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bufferFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.buffer.BufferFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_buffer" />
+
+    <fragment
+        android:id="@+id/flatMapFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.flatmap.FlatMapFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_flat_map" />
+
+    <fragment
+        android:id="@+id/groupByFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.groupby.GroupByFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_group_by" />
 
 </navigation>
