@@ -14,11 +14,8 @@
             android:id="@+id/action_homeFragment_to_creatingFragment"
             app:destination="@id/creatingFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_mapFragment"
-            app:destination="@id/mapFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_debounceFragment"
-            app:destination="@id/debounceFragment" />
+            android:id="@+id/action_homeFragment_to_transformingFragment"
+            app:destination="@id/transformingFragment" />
     </fragment>
 
     <fragment
@@ -28,15 +25,9 @@
         tools:layout="@layout/fragment_creating" />
 
     <fragment
-        android:id="@+id/mapFragment"
-        android:name="com.kvsoftware.rxkotlin.map.MapFragment"
+        android:id="@+id/transformingFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.TransformingFragment"
         android:label="Blank"
-        tools:layout="@layout/fragment_map" />
-
-    <fragment
-        android:id="@+id/debounceFragment"
-        android:name="com.kvsoftware.rxkotlin.debounce.DebounceFragment"
-        android:label="Blank"
-        tools:layout="@layout/fragment_debounce" />
+        tools:layout="@layout/fragment_transforming" />
 
 </navigation>

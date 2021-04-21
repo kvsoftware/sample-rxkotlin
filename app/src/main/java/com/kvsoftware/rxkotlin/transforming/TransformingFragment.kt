@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.map
+package com.kvsoftware.rxkotlin.transforming
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,25 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.kvsoftware.rxkotlin.databinding.FragmentMapBinding
+import com.kvsoftware.rxkotlin.databinding.FragmentTransformingBinding
 
-/**
- * The Map Operator
- * transform the items emitted by an Observable by applying a function to each item
- */
-class MapFragment : Fragment() {
+class TransformingFragment : Fragment() {
 
-    private var fragmentMapBinding: FragmentMapBinding? = null
+    private var fragmentTreatingBinding: FragmentTransformingBinding? = null
 
-    private val viewModel: MapViewModel by viewModels()
+    private val viewModel: TransformingViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentMapBinding.inflate(inflater, container, false)
-        fragmentMapBinding = binding
+        val binding = FragmentTransformingBinding.inflate(inflater, container, false)
+        fragmentTreatingBinding = binding
         return binding.root
     }
 
@@ -34,7 +30,7 @@ class MapFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        fragmentMapBinding = null
+        fragmentTreatingBinding = null
         super.onDestroyView()
     }
 }

@@ -19,16 +19,12 @@ class HomeFragment : Fragment() {
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
         fragmentHomeBinding = binding
         binding.apply {
-            buttonBasic.setOnClickListener {
+            buttonCreating.setOnClickListener {
                 val action = HomeFragmentDirections.actionHomeFragmentToCreatingFragment()
                 findNavController().navigate(action)
             }
-            buttonMap.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeFragmentToMapFragment()
-                findNavController().navigate(action)
-            }
-            buttonDebounce.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeFragmentToDebounceFragment()
+            buttonTransforming.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToTransformingFragment()
                 findNavController().navigate(action)
             }
         }
