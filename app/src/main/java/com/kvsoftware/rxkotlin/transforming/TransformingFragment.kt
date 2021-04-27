@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.kvsoftware.rxkotlin.databinding.FragmentTransformingBinding
-import com.kvsoftware.rxkotlin.home.HomeFragmentDirections
 
 class TransformingFragment : Fragment() {
 
@@ -38,6 +37,10 @@ class TransformingFragment : Fragment() {
             }
             buttonMap.setOnClickListener {
                 val action = TransformingFragmentDirections.actionTransformingFragmentToMapFragment()
+                findNavController().navigate(action)
+            }
+            buttonScan.setOnClickListener {
+                val action = TransformingFragmentDirections.actionTransformingFragmentToScanFragment()
                 findNavController().navigate(action)
             }
         }

@@ -7,4 +7,5 @@
     <string name="fragment_transforming_btn_flat_map">Flat Map</string>
     <string name="fragment_transforming_btn_group_by">Group By</string>
     <string name="fragment_transforming_btn_map">Map</string>
+    <string name="fragment_transforming_btn_scan">Scan</string>
 </resources>

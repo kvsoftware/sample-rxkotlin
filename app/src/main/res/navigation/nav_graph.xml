@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_transformingFragment_to_mapFragment"
             app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_scanFragment"
+            app:destination="@id/scanFragment" />
 
     </fragment>
 
@@ -68,5 +71,11 @@
         android:name="com.kvsoftware.rxkotlin.transforming.map.MapFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.scan.ScanFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_scan" />
 
 </navigation>
