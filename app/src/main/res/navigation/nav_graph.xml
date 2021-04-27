@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_transformingFragment_to_groupByFragment"
             app:destination="@id/groupByFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
 
     </fragment>
 
@@ -59,5 +62,11 @@
         android:name="com.kvsoftware.rxkotlin.transforming.groupby.GroupByFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_group_by" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.map.MapFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_map" />
 
 </navigation>

@@ -36,6 +36,10 @@ class TransformingFragment : Fragment() {
                 val action = TransformingFragmentDirections.actionTransformingFragmentToGroupByFragment()
                 findNavController().navigate(action)
             }
+            buttonMap.setOnClickListener {
+                val action = TransformingFragmentDirections.actionTransformingFragmentToMapFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }

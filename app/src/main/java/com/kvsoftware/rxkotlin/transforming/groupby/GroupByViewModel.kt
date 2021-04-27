@@ -13,7 +13,7 @@ class GroupByViewModel : ViewModel() {
     }
 
     /**
-     * GroupBy - divide an Observable into a set of Observables that each emit a different subset
+     * GroupBy operator - divide an Observable into a set of Observables that each emit a different subset
      * of items from the original Observable
      */
     private fun groupBy() {
