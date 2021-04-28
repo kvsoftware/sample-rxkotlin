@@ -8,4 +8,5 @@
     <string name="fragment_transforming_btn_group_by">Group By</string>
     <string name="fragment_transforming_btn_map">Map</string>
     <string name="fragment_transforming_btn_scan">Scan</string>
+    <string name="fragment_transforming_btn_window">Window</string>
 </resources>

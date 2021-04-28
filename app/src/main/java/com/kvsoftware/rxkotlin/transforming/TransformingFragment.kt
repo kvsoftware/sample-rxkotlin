@@ -43,6 +43,10 @@ class TransformingFragment : Fragment() {
                 val action = TransformingFragmentDirections.actionTransformingFragmentToScanFragment()
                 findNavController().navigate(action)
             }
+            buttonWindow.setOnClickListener {
+                val action = TransformingFragmentDirections.actionTransformingFragmentToWindowFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }

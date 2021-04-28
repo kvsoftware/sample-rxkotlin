@@ -45,6 +45,9 @@
         <action
             android:id="@+id/action_transformingFragment_to_scanFragment"
             app:destination="@id/scanFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_windowFragment"
+            app:destination="@id/windowFragment" />
 
     </fragment>
 
@@ -77,5 +80,11 @@
         android:name="com.kvsoftware.rxkotlin.transforming.scan.ScanFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/windowFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.window.WindowFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_window" />
 
 </navigation>
