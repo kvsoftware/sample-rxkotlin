@@ -22,7 +22,73 @@
         android:id="@+id/creatingFragment"
         android:name="com.kvsoftware.rxkotlin.creating.CreatingFragment"
         android:label="Blank"
-        tools:layout="@layout/fragment_creating" />
+        tools:layout="@layout/fragment_creating">
+
+        <action
+            android:id="@+id/action_creatingFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_deferFragment"
+            app:destination="@id/deferFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_neverFragment"
+            app:destination="@id/neverFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_fromFragment"
+            app:destination="@id/fromFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_intervalFragment"
+            app:destination="@id/intervalFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.create.CreateFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/deferFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.defer.DeferFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_defer" />
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.empty.EmptyFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_empty" />
+
+    <fragment
+        android:id="@+id/neverFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.never.NeverFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_never" />
+
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.error.EmptyFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_error" />
+
+    <fragment
+        android:id="@+id/fromFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.from.FromFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_from" />
+
+    <fragment
+        android:id="@+id/intervalFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.interval.IntervalFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_interval" />
 
     <fragment
         android:id="@+id/transformingFragment"

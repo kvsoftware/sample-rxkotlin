@@ -10,16 +10,16 @@ import java.util.concurrent.TimeUnit
 class CreatingViewModel : ViewModel() {
 
     fun initialize() {
-        create()
-        defer()
-        empty()
-        never()
-        error()
-        interval()
-        just()
-        range()
-        repeat()
-        timer()
+//        create()
+//        defer()
+//        empty()
+//        never()
+//        error()
+//        interval()
+//        just()
+//        range()
+//        repeat()
+//        timer()
     }
 
     /**

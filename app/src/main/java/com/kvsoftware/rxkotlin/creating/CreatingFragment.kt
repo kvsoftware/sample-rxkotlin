@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.kvsoftware.rxkotlin.databinding.FragmentCreatingBinding
 
 class CreatingFragment : Fragment() {
@@ -21,6 +22,36 @@ class CreatingFragment : Fragment() {
     ): View {
         val binding = FragmentCreatingBinding.inflate(inflater, container, false)
         fragmentCreatingBinding = binding
+        binding.apply {
+            buttonCreate.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToCreateFragment()
+                findNavController().navigate(action)
+            }
+            buttonDefer.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToDeferFragment()
+                findNavController().navigate(action)
+            }
+            buttonEmpty.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToEmptyFragment()
+                findNavController().navigate(action)
+            }
+            buttonNever.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToNeverFragment()
+                findNavController().navigate(action)
+            }
+            buttonError.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToErrorFragment()
+                findNavController().navigate(action)
+            }
+            buttonFrom.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToFromFragment()
+                findNavController().navigate(action)
+            }
+            buttonInterval.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToIntervalFragment()
+                findNavController().navigate(action)
+            }
+        }
         return binding.root
     }
 
