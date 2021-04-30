@@ -45,6 +45,18 @@
         <action
             android:id="@+id/action_creatingFragment_to_intervalFragment"
             app:destination="@id/intervalFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_justFragment"
+            app:destination="@id/justFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_rangeFragment"
+            app:destination="@id/rangeFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_repeatFragment"
+            app:destination="@id/repeatFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
 
     </fragment>
 
@@ -89,6 +101,30 @@
         android:name="com.kvsoftware.rxkotlin.creating.interval.IntervalFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_interval" />
+
+    <fragment
+        android:id="@+id/justFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.just.JustFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_just" />
+
+    <fragment
+        android:id="@+id/rangeFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.range.RangeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_range" />
+
+    <fragment
+        android:id="@+id/repeatFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.repeat.RepeatFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_repeat" />
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.timer.TimerFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_timer" />
 
     <fragment
         android:id="@+id/transformingFragment"

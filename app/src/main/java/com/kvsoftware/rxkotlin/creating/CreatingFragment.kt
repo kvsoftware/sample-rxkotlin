@@ -51,6 +51,22 @@ class CreatingFragment : Fragment() {
                 val action = CreatingFragmentDirections.actionCreatingFragmentToIntervalFragment()
                 findNavController().navigate(action)
             }
+            buttonJust.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToJustFragment()
+                findNavController().navigate(action)
+            }
+            buttonRange.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToRangeFragment()
+                findNavController().navigate(action)
+            }
+            buttonRepeat.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToRepeatFragment()
+                findNavController().navigate(action)
+            }
+            buttonTimer.setOnClickListener {
+                val action = CreatingFragmentDirections.actionCreatingFragmentToTimerFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
