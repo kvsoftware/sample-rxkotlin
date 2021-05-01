@@ -27,6 +27,10 @@ class HomeFragment : Fragment() {
                 val action = HomeFragmentDirections.actionHomeFragmentToTransformingFragment()
                 findNavController().navigate(action)
             }
+            buttonFiltering.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToFilteringFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }

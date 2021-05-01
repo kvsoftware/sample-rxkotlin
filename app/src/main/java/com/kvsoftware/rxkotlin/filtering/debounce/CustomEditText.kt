@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.debounce
+package com.kvsoftware.rxkotlin.filtering.debounce
 
 import android.content.Context
 import android.util.AttributeSet

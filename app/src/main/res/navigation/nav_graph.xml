@@ -10,12 +10,17 @@
         android:name="com.kvsoftware.rxkotlin.home.HomeFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_home">
+
         <action
             android:id="@+id/action_homeFragment_to_creatingFragment"
             app:destination="@id/creatingFragment" />
         <action
             android:id="@+id/action_homeFragment_to_transformingFragment"
             app:destination="@id/transformingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filteringFragment"
+            app:destination="@id/filteringFragment" />
+
     </fragment>
 
     <fragment
@@ -188,5 +193,41 @@
         android:name="com.kvsoftware.rxkotlin.transforming.window.WindowFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_window" />
+
+    <fragment
+        android:id="@+id/filteringFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.FilteringFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_filtering">
+
+        <action
+            android:id="@+id/action_transformingFragment_to_debounceFragment"
+            app:destination="@id/debounceFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_distinctFragment"
+            app:destination="@id/distinctFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_elementAtFragment"
+            app:destination="@id/elementAtFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/debounceFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.debounce.DebounceFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_debounce" />
+
+    <fragment
+        android:id="@+id/distinctFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.distinct.DistinctFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_distinct" />
+
+    <fragment
+        android:id="@+id/elementAtFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.elementat.ElementAtFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_element_at" />
 
 </navigation>

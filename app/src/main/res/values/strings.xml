@@ -2,6 +2,7 @@
     <string name="app_name">sample-rxkotlin</string>
     <string name="fragment_home_btn_creating">Creating Observables</string>
     <string name="fragment_home_btn_transforming">Transforming Observables</string>
+    <string name="fragment_home_btn_filtering">Filtering Observables</string>
     <string name="fragment_home_btn_debounce">Debounce</string>
     <string name="fragment_creating_btn_create">Create</string>
     <string name="fragment_creating_btn_defer">Defer</string>
@@ -20,4 +21,7 @@
     <string name="fragment_transforming_btn_map">Map</string>
     <string name="fragment_transforming_btn_scan">Scan</string>
     <string name="fragment_transforming_btn_window">Window</string>
+    <string name="fragment_filtering_btn_debounce">Debounce</string>
+    <string name="fragment_filtering_btn_distinct">Distinct</string>
+    <string name="fragment_filtering_btn_element_at">ElementAt</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.debounce
+package com.kvsoftware.rxkotlin.filtering.debounce
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
