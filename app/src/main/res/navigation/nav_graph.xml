@@ -201,14 +201,29 @@
         tools:layout="@layout/fragment_filtering">
 
         <action
-            android:id="@+id/action_transformingFragment_to_debounceFragment"
+            android:id="@+id/action_filteringFragment_to_debounceFragment"
             app:destination="@id/debounceFragment" />
         <action
-            android:id="@+id/action_transformingFragment_to_distinctFragment"
+            android:id="@+id/action_filteringFragment_to_distinctFragment"
             app:destination="@id/distinctFragment" />
         <action
-            android:id="@+id/action_transformingFragment_to_elementAtFragment"
+            android:id="@+id/action_filteringFragment_to_elementAtFragment"
             app:destination="@id/elementAtFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_ignoreElementsFragment"
+            app:destination="@id/ignoreElementsFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_sampleFragment"
+            app:destination="@id/sampleFragment" />
 
     </fragment>
 
@@ -229,5 +244,35 @@
         android:name="com.kvsoftware.rxkotlin.filtering.elementat.ElementAtFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_element_at" />
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.filter.FilterFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.first.FirstFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/ignoreElementsFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.ignoreelements.IgnoreElementsFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_ignore_elements" />
+
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.last.LastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_last" />
+
+    <fragment
+        android:id="@+id/sampleFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.sample.SampleFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_sample" />
 
 </navigation>

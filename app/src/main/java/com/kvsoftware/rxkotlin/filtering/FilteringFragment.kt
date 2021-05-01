@@ -24,15 +24,35 @@ class FilteringFragment : Fragment() {
         fragmentFilteringBinding = binding
         binding.apply {
             buttonDebounce.setOnClickListener {
-                val action = FilteringFragmentDirections.actionTransformingFragmentToDebounceFragment()
+                val action = FilteringFragmentDirections.actionFilteringFragmentToDebounceFragment()
                 findNavController().navigate(action)
             }
             buttonDistinct.setOnClickListener {
-                val action = FilteringFragmentDirections.actionTransformingFragmentToDistinctFragment()
+                val action = FilteringFragmentDirections.actionFilteringFragmentToDistinctFragment()
                 findNavController().navigate(action)
             }
             buttonElementAt.setOnClickListener {
-                val action = FilteringFragmentDirections.actionTransformingFragmentToElementAtFragment()
+                val action = FilteringFragmentDirections.actionFilteringFragmentToElementAtFragment()
+                findNavController().navigate(action)
+            }
+            buttonFilter.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToFilterFragment()
+                findNavController().navigate(action)
+            }
+            buttonFirst.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToFirstFragment()
+                findNavController().navigate(action)
+            }
+            buttonIgnoreElements.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToIgnoreElementsFragment()
+                findNavController().navigate(action)
+            }
+            buttonLast.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToLastFragment()
+                findNavController().navigate(action)
+            }
+            buttonSample.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToSampleFragment()
                 findNavController().navigate(action)
             }
         }
