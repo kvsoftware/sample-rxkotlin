@@ -224,6 +224,18 @@
         <action
             android:id="@+id/action_filteringFragment_to_sampleFragment"
             app:destination="@id/sampleFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_skipFragment"
+            app:destination="@id/skipFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_skipLastFragment"
+            app:destination="@id/skipLastFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_takeFragment"
+            app:destination="@id/takeFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_takeLastFragment"
+            app:destination="@id/takeLastFragment" />
 
     </fragment>
 
@@ -274,5 +286,29 @@
         android:name="com.kvsoftware.rxkotlin.filtering.sample.SampleFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_sample" />
+
+    <fragment
+        android:id="@+id/skipFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.skip.SkipFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip" />
+
+    <fragment
+        android:id="@+id/skipLastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.skiplast.SkipLastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip_last" />
+
+    <fragment
+        android:id="@+id/takeFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.take.TakeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take" />
+
+    <fragment
+        android:id="@+id/takeLastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.takelast.TakeLastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take_last" />
 
 </navigation>

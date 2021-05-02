@@ -29,4 +29,9 @@
     <string name="fragment_filtering_btn_ignore_elements">Ignore Elements</string>
     <string name="fragment_filtering_btn_last">Last</string>
     <string name="fragment_filtering_btn_sample">Sample</string>
+    <string name="fragment_filtering_btn_skip">Skip</string>
+    <string name="fragment_filtering_btn_skip_last">Skip Last</string>
+    <string name="fragment_filtering_btn_take">Take</string>
+    <string name="fragment_filtering_btn_take_last">Take Last</string>
+
 </resources>

@@ -55,6 +55,22 @@ class FilteringFragment : Fragment() {
                 val action = FilteringFragmentDirections.actionFilteringFragmentToSampleFragment()
                 findNavController().navigate(action)
             }
+            buttonSkip.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToSkipFragment()
+                findNavController().navigate(action)
+            }
+            buttonSkipLast.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToSkipLastFragment()
+                findNavController().navigate(action)
+            }
+            buttonTake.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToTakeFragment()
+                findNavController().navigate(action)
+            }
+            buttonTakeLast.setOnClickListener {
+                val action = FilteringFragmentDirections.actionFilteringFragmentToTakeLastFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
