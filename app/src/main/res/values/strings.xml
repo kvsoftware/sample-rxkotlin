@@ -3,6 +3,7 @@
     <string name="fragment_home_btn_creating">Creating Observables</string>
     <string name="fragment_home_btn_transforming">Transforming Observables</string>
     <string name="fragment_home_btn_filtering">Filtering Observables</string>
+    <string name="fragment_home_btn_combining">Combining Observables</string>
     <string name="fragment_home_btn_debounce">Debounce</string>
     <string name="fragment_creating_btn_create">Create</string>
     <string name="fragment_creating_btn_defer">Defer</string>
@@ -33,5 +34,8 @@
     <string name="fragment_filtering_btn_skip_last">Skip Last</string>
     <string name="fragment_filtering_btn_take">Take</string>
     <string name="fragment_filtering_btn_take_last">Take Last</string>
+    <string name="fragment_filtering_btn_combine_latest">Combine Latest</string>
+    <string name="fragment_filtering_btn_join">Join</string>
+    <string name="fragment_filtering_btn_merge">Merge</string>
 
 </resources>

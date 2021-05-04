@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_homeFragment_to_filteringFragment"
             app:destination="@id/filteringFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_combiningFragment"
+            app:destination="@id/combiningFragment" />
 
     </fragment>
 
@@ -310,5 +313,41 @@
         android:name="com.kvsoftware.rxkotlin.filtering.takelast.TakeLastFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_take_last" />
+
+    <fragment
+        android:id="@+id/combiningFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.CombiningFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_combining">
+
+        <action
+            android:id="@+id/action_filteringFragment_to_combineLatestFragment"
+            app:destination="@id/combineLatestFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_joinFragment"
+            app:destination="@id/joinFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_mergeFragment"
+            app:destination="@id/mergeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/combineLatestFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.combinelatest.CombineLatestFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_combine_latest" />
+
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.join.JoinFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_join" />
+
+    <fragment
+        android:id="@+id/mergeFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.merge.MergeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_merge" />
 
 </navigation>

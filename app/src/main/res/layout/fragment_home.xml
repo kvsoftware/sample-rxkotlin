@@ -31,5 +31,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_transforming" />
 
+    <Button
+        android:id="@+id/button_combining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_home_btn_combining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_filtering" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
