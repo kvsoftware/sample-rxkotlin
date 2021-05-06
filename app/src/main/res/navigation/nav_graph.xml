@@ -329,6 +329,9 @@
         <action
             android:id="@+id/action_filteringFragment_to_mergeFragment"
             app:destination="@id/mergeFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_startWithFragment"
+            app:destination="@id/startWithFragment" />
 
     </fragment>
 
@@ -349,5 +352,11 @@
         android:name="com.kvsoftware.rxkotlin.combining.merge.MergeFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_merge" />
+
+    <fragment
+        android:id="@+id/startWithFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.startwith.StartWithFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_start_with" />
 
 </navigation>

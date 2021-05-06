@@ -38,6 +38,11 @@ class CombiningFragment : Fragment() {
                     CombiningFragmentDirections.actionFilteringFragmentToMergeFragment()
                 findNavController().navigate(action)
             }
+            buttonStartWith.setOnClickListener {
+                val action =
+                    CombiningFragmentDirections.actionFilteringFragmentToStartWithFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }

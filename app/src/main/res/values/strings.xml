@@ -37,5 +37,6 @@
     <string name="fragment_filtering_btn_combine_latest">Combine Latest</string>
     <string name="fragment_filtering_btn_join">Join</string>
     <string name="fragment_filtering_btn_merge">Merge</string>
+    <string name="fragment_filtering_btn_start_with">Start With</string>
 
 </resources>

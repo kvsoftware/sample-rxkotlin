@@ -5,8 +5,6 @@ import com.kvsoftware.rxkotlin.LoggerHelper
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Observer
 import io.reactivex.rxjava3.disposables.Disposable
-import io.reactivex.rxjava3.subscribers.TestSubscriber
-
 
 class MergeViewModel : ViewModel() {
 
@@ -18,7 +16,6 @@ class MergeViewModel : ViewModel() {
      * Merge operator - combine multiple Observables into one by merging their emissions
      */
     private fun merge() {
-
         val observable1 = Observable.just(0, 1, 2, 3, 4, 5)
         val observable2 = Observable.just(6, 7, 8, 9, 10, 11)
 
@@ -41,9 +38,7 @@ class MergeViewModel : ViewModel() {
             override fun onNext(t: Int) {
                 LoggerHelper.i("merge() : onNext() : $t")
             }
-
         })
-
     }
 
 }
