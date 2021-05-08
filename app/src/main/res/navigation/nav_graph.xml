@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_homeFragment_to_combiningFragment"
             app:destination="@id/combiningFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_errorHandlingFragment"
+            app:destination="@id/errorHandlingFragment" />
 
     </fragment>
 
@@ -367,5 +370,23 @@
         android:name="com.kvsoftware.rxkotlin.combining.zip.ZipFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_zip" />
+
+    <fragment
+        android:id="@+id/errorHandlingFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.ErrorHandlingFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_error_handling">
+
+        <action
+            android:id="@+id/action_errorHandlingFragment_to_catchFragment"
+            app:destination="@id/catchFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/catchFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.catch.CatchFragment"
+        android:label="Blank"
+        tools:layout="@layout/catchFragment" />
 
 </navigation>
