@@ -332,6 +332,9 @@
         <action
             android:id="@+id/action_filteringFragment_to_startWithFragment"
             app:destination="@id/startWithFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_zipFragment"
+            app:destination="@id/zipFragment" />
 
     </fragment>
 
@@ -358,5 +361,11 @@
         android:name="com.kvsoftware.rxkotlin.combining.startwith.StartWithFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_start_with" />
+
+    <fragment
+        android:id="@+id/zipFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.zip.ZipFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_zip" />
 
 </navigation>

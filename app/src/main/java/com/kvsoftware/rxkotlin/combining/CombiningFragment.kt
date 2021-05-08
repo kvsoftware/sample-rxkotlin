@@ -43,6 +43,11 @@ class CombiningFragment : Fragment() {
                     CombiningFragmentDirections.actionFilteringFragmentToStartWithFragment()
                 findNavController().navigate(action)
             }
+            buttonZip.setOnClickListener {
+                val action =
+                    CombiningFragmentDirections.actionFilteringFragmentToZipFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
