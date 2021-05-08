@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">sample-rxkotlin</string>
+    <string name="fragment_home_btn_creating">Creating Observables</string>
+    <string name="fragment_home_btn_transforming">Transforming Observables</string>
+    <string name="fragment_home_btn_filtering">Filtering Observables</string>
+    <string name="fragment_home_btn_combining">Combining Observables</string>
+    <string name="fragment_home_btn_debounce">Debounce</string>
+    <string name="fragment_creating_btn_create">Create</string>
+    <string name="fragment_creating_btn_defer">Defer</string>
+    <string name="fragment_creating_btn_empty">Empty</string>
+    <string name="fragment_creating_btn_never">Never</string>
+    <string name="fragment_creating_btn_error">Error</string>
+    <string name="fragment_creating_btn_from">From</string>
+    <string name="fragment_creating_btn_interval">Interval</string>
+    <string name="fragment_creating_btn_just">Just</string>
+    <string name="fragment_creating_btn_range">Range</string>
+    <string name="fragment_creating_btn_repeat">Repeat</string>
+    <string name="fragment_creating_btn_timer">Timer</string>
+    <string name="fragment_transforming_btn_buffer">Buffer</string>
+    <string name="fragment_transforming_btn_flat_map">Flat Map</string>
+    <string name="fragment_transforming_btn_group_by">Group By</string>
+    <string name="fragment_transforming_btn_map">Map</string>
+    <string name="fragment_transforming_btn_scan">Scan</string>
+    <string name="fragment_transforming_btn_window">Window</string>
+    <string name="fragment_filtering_btn_debounce">Debounce</string>
+    <string name="fragment_filtering_btn_distinct">Distinct</string>
+    <string name="fragment_filtering_btn_element_at">ElementAt</string>
+    <string name="fragment_filtering_btn_filter">Filter</string>
+    <string name="fragment_filtering_btn_first">First</string>
+    <string name="fragment_filtering_btn_ignore_elements">Ignore Elements</string>
+    <string name="fragment_filtering_btn_last">Last</string>
+    <string name="fragment_filtering_btn_sample">Sample</string>
+    <string name="fragment_filtering_btn_skip">Skip</string>
+    <string name="fragment_filtering_btn_skip_last">Skip Last</string>
+    <string name="fragment_filtering_btn_take">Take</string>
+    <string name="fragment_filtering_btn_take_last">Take Last</string>
+    <string name="fragment_filtering_btn_combine_latest">Combine Latest</string>
+    <string name="fragment_filtering_btn_join">Join</string>
+    <string name="fragment_filtering_btn_merge">Merge</string>
+    <string name="fragment_filtering_btn_start_with">Start With</string>
+    <string name="fragment_filtering_btn_zip">Zip</string>
+
 </resources>

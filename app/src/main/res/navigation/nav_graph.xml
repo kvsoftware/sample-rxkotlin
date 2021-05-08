@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kvsoftware.rxkotlin.home.HomeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_creatingFragment"
+            app:destination="@id/creatingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transformingFragment"
+            app:destination="@id/transformingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filteringFragment"
+            app:destination="@id/filteringFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_combiningFragment"
+            app:destination="@id/combiningFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/creatingFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.CreatingFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_creating">
+
+        <action
+            android:id="@+id/action_creatingFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_deferFragment"
+            app:destination="@id/deferFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_neverFragment"
+            app:destination="@id/neverFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_errorFragment"
+            app:destination="@id/errorFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_fromFragment"
+            app:destination="@id/fromFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_intervalFragment"
+            app:destination="@id/intervalFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_justFragment"
+            app:destination="@id/justFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_rangeFragment"
+            app:destination="@id/rangeFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_repeatFragment"
+            app:destination="@id/repeatFragment" />
+        <action
+            android:id="@+id/action_creatingFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.create.CreateFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/deferFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.defer.DeferFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_defer" />
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.empty.EmptyFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_empty" />
+
+    <fragment
+        android:id="@+id/neverFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.never.NeverFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_never" />
+
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.error.EmptyFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_error" />
+
+    <fragment
+        android:id="@+id/fromFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.from.FromFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_from" />
+
+    <fragment
+        android:id="@+id/intervalFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.interval.IntervalFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_interval" />
+
+    <fragment
+        android:id="@+id/justFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.just.JustFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_just" />
+
+    <fragment
+        android:id="@+id/rangeFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.range.RangeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_range" />
+
+    <fragment
+        android:id="@+id/repeatFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.repeat.RepeatFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_repeat" />
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.kvsoftware.rxkotlin.creating.timer.TimerFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_timer" />
+
+    <fragment
+        android:id="@+id/transformingFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.TransformingFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_transforming">
+
+        <action
+            android:id="@+id/action_transformingFragment_to_bufferFragment"
+            app:destination="@id/bufferFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_flatMapFragment"
+            app:destination="@id/flatMapFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_groupByFragment"
+            app:destination="@id/groupByFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_scanFragment"
+            app:destination="@id/scanFragment" />
+        <action
+            android:id="@+id/action_transformingFragment_to_windowFragment"
+            app:destination="@id/windowFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bufferFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.buffer.BufferFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_buffer" />
+
+    <fragment
+        android:id="@+id/flatMapFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.flatmap.FlatMapFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_flat_map" />
+
+    <fragment
+        android:id="@+id/groupByFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.groupby.GroupByFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_group_by" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.map.MapFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.scan.ScanFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/windowFragment"
+        android:name="com.kvsoftware.rxkotlin.transforming.window.WindowFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_window" />
+
+    <fragment
+        android:id="@+id/filteringFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.FilteringFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_filtering">
+
+        <action
+            android:id="@+id/action_filteringFragment_to_debounceFragment"
+            app:destination="@id/debounceFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_distinctFragment"
+            app:destination="@id/distinctFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_elementAtFragment"
+            app:destination="@id/elementAtFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_ignoreElementsFragment"
+            app:destination="@id/ignoreElementsFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_sampleFragment"
+            app:destination="@id/sampleFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_skipFragment"
+            app:destination="@id/skipFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_skipLastFragment"
+            app:destination="@id/skipLastFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_takeFragment"
+            app:destination="@id/takeFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_takeLastFragment"
+            app:destination="@id/takeLastFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/debounceFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.debounce.DebounceFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_debounce" />
+
+    <fragment
+        android:id="@+id/distinctFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.distinct.DistinctFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_distinct" />
+
+    <fragment
+        android:id="@+id/elementAtFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.elementat.ElementAtFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_element_at" />
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.filter.FilterFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.first.FirstFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/ignoreElementsFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.ignoreelements.IgnoreElementsFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_ignore_elements" />
+
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.last.LastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_last" />
+
+    <fragment
+        android:id="@+id/sampleFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.sample.SampleFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_sample" />
+
+    <fragment
+        android:id="@+id/skipFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.skip.SkipFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip" />
+
+    <fragment
+        android:id="@+id/skipLastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.skiplast.SkipLastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip_last" />
+
+    <fragment
+        android:id="@+id/takeFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.take.TakeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take" />
+
+    <fragment
+        android:id="@+id/takeLastFragment"
+        android:name="com.kvsoftware.rxkotlin.filtering.takelast.TakeLastFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take_last" />
+
+    <fragment
+        android:id="@+id/combiningFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.CombiningFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_combining">
+
+        <action
+            android:id="@+id/action_filteringFragment_to_combineLatestFragment"
+            app:destination="@id/combineLatestFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_joinFragment"
+            app:destination="@id/joinFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_mergeFragment"
+            app:destination="@id/mergeFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_startWithFragment"
+            app:destination="@id/startWithFragment" />
+        <action
+            android:id="@+id/action_filteringFragment_to_zipFragment"
+            app:destination="@id/zipFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/combineLatestFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.combinelatest.CombineLatestFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_combine_latest" />
+
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.join.JoinFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_join" />
+
+    <fragment
+        android:id="@+id/mergeFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.merge.MergeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_merge" />
+
+    <fragment
+        android:id="@+id/startWithFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.startwith.StartWithFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_start_with" />
+
+    <fragment
+        android:id="@+id/zipFragment"
+        android:name="com.kvsoftware.rxkotlin.combining.zip.ZipFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_zip" />
+
+</navigation>
