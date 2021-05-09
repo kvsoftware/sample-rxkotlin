@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_homeFragment_to_errorHandlingFragment"
             app:destination="@id/errorHandlingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_utilityFragment"
+            app:destination="@id/utilityFragment" />
 
     </fragment>
 
@@ -397,5 +400,41 @@
         android:name="com.kvsoftware.rxkotlin.errorhandling.retry.RetryFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_retry" />
+
+    <fragment
+        android:id="@+id/utilityFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.UtilityFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_utility">
+
+        <action
+            android:id="@+id/action_utilityFragment_to_delayFragment"
+            app:destination="@id/delayFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_doFragment"
+            app:destination="@id/doFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_materializeFragment"
+            app:destination="@id/materializeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/delayFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.delay.DelayFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_delay" />
+
+    <fragment
+        android:id="@+id/doFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.do.DoFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_do" />
+
+    <fragment
+        android:id="@+id/materializeFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.materialize.MaterializeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_materialize" />
 
 </navigation>

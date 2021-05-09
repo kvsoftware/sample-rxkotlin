@@ -39,6 +39,10 @@ class HomeFragment : Fragment() {
                 val action = HomeFragmentDirections.actionHomeFragmentToErrorHandlingFragment()
                 findNavController().navigate(action)
             }
+            buttonUtility.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToUtilityFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }

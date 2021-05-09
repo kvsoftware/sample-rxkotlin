@@ -4,7 +4,8 @@
     <string name="fragment_home_btn_transforming">Transforming Observables</string>
     <string name="fragment_home_btn_filtering">Filtering Observables</string>
     <string name="fragment_home_btn_combining">Combining Observables</string>
-    <string name="fragment_home_btn_error_handling">Error Handling Observables</string>
+    <string name="fragment_home_btn_error_handling">Error Handling Operators</string>
+    <string name="fragment_home_btn_utility">Observable Utility Operators</string>
     <string name="fragment_home_btn_debounce">Debounce</string>
     <string name="fragment_creating_btn_create">Create</string>
     <string name="fragment_creating_btn_defer">Defer</string>
@@ -42,5 +43,8 @@
     <string name="fragment_filtering_btn_zip">Zip</string>
     <string name="fragment_error_handling_btn_catch">Catch</string>
     <string name="fragment_error_handling_btn_retry">Retry</string>
+    <string name="fragment_utility_btn_delay">Delay</string>
+    <string name="fragment_utility_btn_do">Do</string>
+    <string name="fragment_utility_btn_materialize">Materialize/Dematerialize</string>
 
 </resources>
