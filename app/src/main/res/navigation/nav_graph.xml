@@ -380,6 +380,9 @@
         <action
             android:id="@+id/action_errorHandlingFragment_to_catchFragment"
             app:destination="@id/catchFragment" />
+        <action
+            android:id="@+id/action_errorHandlingFragment_to_retryFragment"
+            app:destination="@id/retryFragment" />
 
     </fragment>
 
@@ -387,6 +390,12 @@
         android:id="@+id/catchFragment"
         android:name="com.kvsoftware.rxkotlin.errorhandling.catch.CatchFragment"
         android:label="Blank"
-        tools:layout="@layout/catchFragment" />
+        tools:layout="@layout/fragment_catch" />
+
+    <fragment
+        android:id="@+id/retryFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.retry.RetryFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_retry" />
 
 </navigation>

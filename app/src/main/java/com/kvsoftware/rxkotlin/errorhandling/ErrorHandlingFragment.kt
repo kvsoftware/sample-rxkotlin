@@ -28,6 +28,11 @@ class ErrorHandlingFragment : Fragment() {
                     ErrorHandlingFragmentDirections.actionErrorHandlingFragmentToCatchFragment()
                 findNavController().navigate(action)
             }
+            buttonRetry.setOnClickListener {
+                val action =
+                    ErrorHandlingFragmentDirections.actionErrorHandlingFragmentToRetryFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
