@@ -46,5 +46,6 @@
     <string name="fragment_utility_btn_delay">Delay</string>
     <string name="fragment_utility_btn_do">Do</string>
     <string name="fragment_utility_btn_materialize">Materialize/Dematerialize</string>
+    <string name="fragment_utility_btn_observe_on">ObserveOn</string>
 
 </resources>

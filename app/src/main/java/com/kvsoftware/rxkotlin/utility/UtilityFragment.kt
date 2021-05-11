@@ -16,26 +16,30 @@ class UtilityFragment : Fragment() {
     private val viewModel: UtilityViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View {
         val binding = FragmentUtilityBinding.inflate(inflater, container, false)
         fragmentUtilityBinding = binding
         binding.apply {
             buttonDelay.setOnClickListener {
                 val action =
-                    UtilityFragmentDirections.actionUtilityFragmentToDelayFragment()
+                        UtilityFragmentDirections.actionUtilityFragmentToDelayFragment()
                 findNavController().navigate(action)
             }
             buttonDo.setOnClickListener {
                 val action =
-                    UtilityFragmentDirections.actionUtilityFragmentToDoFragment()
+                        UtilityFragmentDirections.actionUtilityFragmentToDoFragment()
                 findNavController().navigate(action)
             }
             buttonMaterialize.setOnClickListener {
                 val action =
-                    UtilityFragmentDirections.actionUtilityFragmentToMaterializeFragment()
+                        UtilityFragmentDirections.actionUtilityFragmentToMaterializeFragment()
+                findNavController().navigate(action)
+            }
+            buttonObserveOn.setOnClickListener {
+                val action = UtilityFragmentDirections.actionUtilityFragmentToObserveOnFragment()
                 findNavController().navigate(action)
             }
         }

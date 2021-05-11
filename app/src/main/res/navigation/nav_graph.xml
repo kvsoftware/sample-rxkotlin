@@ -416,6 +416,9 @@
         <action
             android:id="@+id/action_utilityFragment_to_materializeFragment"
             app:destination="@id/materializeFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_observeOnFragment"
+            app:destination="@id/observeOnFragment" />
 
     </fragment>
 
@@ -436,5 +439,11 @@
         android:name="com.kvsoftware.rxkotlin.utility.materialize.MaterializeFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_materialize" />
+
+    <fragment
+        android:id="@+id/observeOnFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.observeon.ObserveOnFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_observe_on" />
 
 </navigation>
