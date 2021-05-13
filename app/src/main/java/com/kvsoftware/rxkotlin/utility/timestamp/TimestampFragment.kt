@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.utility.observeon
+package com.kvsoftware.rxkotlin.utility.timestamp
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,21 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.kvsoftware.rxkotlin.databinding.FragmentObserveOnBinding
+import com.kvsoftware.rxkotlin.databinding.FragmentTimestampBinding
 
-class ObserveOnFragment : Fragment() {
+class TimestampFragment : Fragment() {
 
-    private var fragmentObserveOnBinding: FragmentObserveOnBinding? = null
+    private var fragmentTimestampBinding: FragmentTimestampBinding? = null
 
-    private val viewModel: ObserveOnViewModel by viewModels()
+    private val viewModel: TimestampViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentObserveOnBinding.inflate(inflater, container, false)
-        fragmentObserveOnBinding = binding
+        val binding = FragmentTimestampBinding.inflate(inflater, container, false)
+        fragmentTimestampBinding = binding
         return binding.root
     }
 
@@ -30,7 +30,7 @@ class ObserveOnFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        fragmentObserveOnBinding = null
+        fragmentTimestampBinding = null
         super.onDestroyView()
     }
 }

@@ -47,5 +47,9 @@
     <string name="fragment_utility_btn_do">Do</string>
     <string name="fragment_utility_btn_materialize">Materialize/Dematerialize</string>
     <string name="fragment_utility_btn_observe_on">ObserveOn</string>
+    <string name="fragment_utility_btn_subscribe_on">SubscribeOn</string>
+    <string name="fragment_utility_btn_time_interval">TimeInterval</string>
+    <string name="fragment_utility_btn_time_out">TimeOut</string>
+    <string name="fragment_utility_btn_timestamp">Timestamp</string>
 
 </resources>
