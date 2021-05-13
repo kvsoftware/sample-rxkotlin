@@ -23,6 +23,12 @@
         <action
             android:id="@+id/action_homeFragment_to_combiningFragment"
             app:destination="@id/combiningFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_errorHandlingFragment"
+            app:destination="@id/errorHandlingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_utilityFragment"
+            app:destination="@id/utilityFragment" />
 
     </fragment>
 
@@ -367,5 +373,77 @@
         android:name="com.kvsoftware.rxkotlin.combining.zip.ZipFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_zip" />
+
+    <fragment
+        android:id="@+id/errorHandlingFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.ErrorHandlingFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_error_handling">
+
+        <action
+            android:id="@+id/action_errorHandlingFragment_to_catchFragment"
+            app:destination="@id/catchFragment" />
+        <action
+            android:id="@+id/action_errorHandlingFragment_to_retryFragment"
+            app:destination="@id/retryFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/catchFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.catch.CatchFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_catch" />
+
+    <fragment
+        android:id="@+id/retryFragment"
+        android:name="com.kvsoftware.rxkotlin.errorhandling.retry.RetryFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_retry" />
+
+    <fragment
+        android:id="@+id/utilityFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.UtilityFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_utility">
+
+        <action
+            android:id="@+id/action_utilityFragment_to_delayFragment"
+            app:destination="@id/delayFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_doFragment"
+            app:destination="@id/doFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_materializeFragment"
+            app:destination="@id/materializeFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_observeOnFragment"
+            app:destination="@id/observeOnFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/delayFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.delay.DelayFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_delay" />
+
+    <fragment
+        android:id="@+id/doFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.do.DoFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_do" />
+
+    <fragment
+        android:id="@+id/materializeFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.materialize.MaterializeFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_materialize" />
+
+    <fragment
+        android:id="@+id/observeOnFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.observeon.ObserveOnFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_observe_on" />
 
 </navigation>
