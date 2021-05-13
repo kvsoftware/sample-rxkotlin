@@ -1,4 +1,4 @@
-package com.kvsoftware.rxkotlin.utility.observeon
+package com.kvsoftware.rxkotlin.utility.timeinterval
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,21 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.kvsoftware.rxkotlin.databinding.FragmentObserveOnBinding
+import com.kvsoftware.rxkotlin.databinding.FragmentTimeIntervalBinding
 
-class ObserveOnFragment : Fragment() {
+class TimeIntervalFragment : Fragment() {
 
-    private var fragmentObserveOnBinding: FragmentObserveOnBinding? = null
+    private var fragmentTimeIntervalBinding: FragmentTimeIntervalBinding? = null
 
-    private val viewModel: ObserveOnViewModel by viewModels()
+    private val viewModel: TimeIntervalViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentObserveOnBinding.inflate(inflater, container, false)
-        fragmentObserveOnBinding = binding
+        val binding = FragmentTimeIntervalBinding.inflate(inflater, container, false)
+        fragmentTimeIntervalBinding = binding
         return binding.root
     }
 
@@ -30,7 +30,7 @@ class ObserveOnFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        fragmentObserveOnBinding = null
+        fragmentTimeIntervalBinding = null
         super.onDestroyView()
     }
 }

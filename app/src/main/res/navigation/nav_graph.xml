@@ -419,6 +419,18 @@
         <action
             android:id="@+id/action_utilityFragment_to_observeOnFragment"
             app:destination="@id/observeOnFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_serializeOnFragment"
+            app:destination="@id/serializeOnFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_timeIntervalFragment"
+            app:destination="@id/timeIntervalFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_timeOutFragment"
+            app:destination="@id/timeOutFragment" />
+        <action
+            android:id="@+id/action_utilityFragment_to_timestampFragment"
+            app:destination="@id/timestampFragment" />
 
     </fragment>
 
@@ -445,5 +457,29 @@
         android:name="com.kvsoftware.rxkotlin.utility.observeon.ObserveOnFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_observe_on" />
+
+    <fragment
+        android:id="@+id/serializeOnFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.serialize.SubscribeOnFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_subscribe_on" />
+
+    <fragment
+        android:id="@+id/timeIntervalFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.timeinterval.TimeIntervalFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_time_interval" />
+
+    <fragment
+        android:id="@+id/timeOutFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.timeout.TimeOutFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_time_out" />
+
+    <fragment
+        android:id="@+id/timestampFragment"
+        android:name="com.kvsoftware.rxkotlin.utility.timestamp.TimestampFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_timestamp" />
 
 </navigation>

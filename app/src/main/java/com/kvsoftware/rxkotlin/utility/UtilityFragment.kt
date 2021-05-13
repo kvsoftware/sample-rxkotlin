@@ -42,6 +42,22 @@ class UtilityFragment : Fragment() {
                 val action = UtilityFragmentDirections.actionUtilityFragmentToObserveOnFragment()
                 findNavController().navigate(action)
             }
+            buttonSerialize.setOnClickListener {
+                val action = UtilityFragmentDirections.actionUtilityFragmentToSerializeOnFragment()
+                findNavController().navigate(action)
+            }
+            buttonTimeInterval.setOnClickListener {
+                val action = UtilityFragmentDirections.actionUtilityFragmentToTimeIntervalFragment()
+                findNavController().navigate(action)
+            }
+            buttonTimeOut.setOnClickListener {
+                val action = UtilityFragmentDirections.actionUtilityFragmentToTimeOutFragment()
+                findNavController().navigate(action)
+            }
+            buttonTimestamp.setOnClickListener {
+                val action = UtilityFragmentDirections.actionUtilityFragmentToTimestampFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
