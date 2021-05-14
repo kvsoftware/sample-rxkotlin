@@ -58,4 +58,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_error_handling" />
 
+    <Button
+        android:id="@+id/button_conditional_and_boolean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_home_btn_conditional_and_boolean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_utility" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
