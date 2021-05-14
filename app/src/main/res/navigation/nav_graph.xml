@@ -29,6 +29,12 @@
         <action
             android:id="@+id/action_homeFragment_to_utilityFragment"
             app:destination="@id/utilityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_conditionalAndBooleanFragment"
+            app:destination="@id/conditionalAndBooleanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_connectableFragment"
+            app:destination="@id/connectableFragment" />
 
     </fragment>
 
@@ -481,5 +487,140 @@
         android:name="com.kvsoftware.rxkotlin.utility.timestamp.TimestampFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_timestamp" />
+
+    <fragment
+        android:id="@+id/conditionalAndBooleanFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.ConditionalAndBooleanFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_conditional_and_boolean">
+
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_allFragment"
+            app:destination="@id/allFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_ambFragment"
+            app:destination="@id/ambFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_containsFragment"
+            app:destination="@id/containsFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_defaultIfEmptyFragment"
+            app:destination="@id/defaultIfEmptyFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_sequenceEqualFragment"
+            app:destination="@id/sequenceEqualFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_skipUntilFragment"
+            app:destination="@id/skipUntilFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_skipWhileFragment"
+            app:destination="@id/skipWhileFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_takeUntilFragment"
+            app:destination="@id/takeUntilFragment" />
+        <action
+            android:id="@+id/action_conditionalAndBooleanFragment_to_takeWhileFragment"
+            app:destination="@id/takeWhileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/allFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.all.AllFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_all" />
+
+    <fragment
+        android:id="@+id/ambFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.amb.AmbFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_amb" />
+
+    <fragment
+        android:id="@+id/containsFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.contains.ContainsFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_contains" />
+
+    <fragment
+        android:id="@+id/defaultIfEmptyFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.defaultifempty.DefaultIfEmptyFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_default_if_empty" />
+
+    <fragment
+        android:id="@+id/sequenceEqualFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.sequenceequal.SequenceEqualFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_sequence_equal" />
+
+    <fragment
+        android:id="@+id/skipUntilFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.skipuntil.SkipUntilFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip_until" />
+
+    <fragment
+        android:id="@+id/skipWhileFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.skipwhile.SkipWhileFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_skip_while" />
+
+    <fragment
+        android:id="@+id/takeUntilFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.takeuntil.TakeUntilFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take_until" />
+
+    <fragment
+        android:id="@+id/takeWhileFragment"
+        android:name="com.kvsoftware.rxkotlin.conditionalandboolean.takewhile.TakeWhileFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_take_while" />
+
+    <fragment
+        android:id="@+id/connectableFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.ConnectableFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_connectable">
+
+        <action
+            android:id="@+id/action_connectableFragment_to_connectFragment"
+            app:destination="@id/connectFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_publishFragment"
+            app:destination="@id/publishFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_refCountFragment"
+            app:destination="@id/refCountFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_replayFragment"
+            app:destination="@id/replayFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/connectFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.connect.ConnectFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_connect" />
+
+    <fragment
+        android:id="@+id/publishFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.publish.PublishFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_publish" />
+
+    <fragment
+        android:id="@+id/refCountFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.refcount.RefCountFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_ref_count" />
+
+    <fragment
+        android:id="@+id/replayFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.replay.ReplayFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_replay" />
 
 </navigation>

@@ -6,6 +6,8 @@
     <string name="fragment_home_btn_combining">Combining Observables</string>
     <string name="fragment_home_btn_error_handling">Error Handling Operators</string>
     <string name="fragment_home_btn_utility">Observable Utility Operators</string>
+    <string name="fragment_home_btn_conditional_and_boolean">Conditional And Boolean Operators</string>
+    <string name="fragment_home_btn_connectable">Connectable Observable Operators</string>
     <string name="fragment_home_btn_debounce">Debounce</string>
     <string name="fragment_creating_btn_create">Create</string>
     <string name="fragment_creating_btn_defer">Defer</string>
@@ -51,5 +53,18 @@
     <string name="fragment_utility_btn_time_interval">TimeInterval</string>
     <string name="fragment_utility_btn_time_out">TimeOut</string>
     <string name="fragment_utility_btn_timestamp">Timestamp</string>
+    <string name="fragment_conditional_and_boolean_btn_all">All</string>
+    <string name="fragment_conditional_and_boolean_btn_amb">Amb</string>
+    <string name="fragment_conditional_and_boolean_btn_contains">Contains</string>
+    <string name="fragment_conditional_and_boolean_btn_default_if_empty">DefaultIfEmpty</string>
+    <string name="fragment_conditional_and_boolean_btn_sequence_equal">SequenceEqual</string>
+    <string name="fragment_conditional_and_boolean_btn_skip_until">SkipUtil</string>
+    <string name="fragment_conditional_and_boolean_btn_skip_while">SkipWhile</string>
+    <string name="fragment_conditional_and_boolean_btn_take_until">TakeUntil</string>
+    <string name="fragment_conditional_and_boolean_btn_take_while">TakeWhile</string>
+    <string name="fragment_connectable_btn_connect">Connect</string>
+    <string name="fragment_connectable_btn_publish">Publish</string>
+    <string name="fragment_connectable_btn_ref_count">RefCount</string>
+    <string name="fragment_connectable_btn_replay">Replay</string>
 
 </resources>
