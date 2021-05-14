@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_homeFragment_to_conditionalAndBooleanFragment"
             app:destination="@id/conditionalAndBooleanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_connectableFragment"
+            app:destination="@id/connectableFragment" />
 
     </fragment>
 
@@ -574,5 +577,50 @@
         android:name="com.kvsoftware.rxkotlin.conditionalandboolean.takewhile.TakeWhileFragment"
         android:label="Blank"
         tools:layout="@layout/fragment_take_while" />
+
+    <fragment
+        android:id="@+id/connectableFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.ConnectableFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_connectable">
+
+        <action
+            android:id="@+id/action_connectableFragment_to_connectFragment"
+            app:destination="@id/connectFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_publishFragment"
+            app:destination="@id/publishFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_refCountFragment"
+            app:destination="@id/refCountFragment" />
+        <action
+            android:id="@+id/action_connectableFragment_to_replayFragment"
+            app:destination="@id/replayFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/connectFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.connect.ConnectFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_connect" />
+
+    <fragment
+        android:id="@+id/publishFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.publish.PublishFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_publish" />
+
+    <fragment
+        android:id="@+id/refCountFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.refcount.RefCountFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_ref_count" />
+
+    <fragment
+        android:id="@+id/replayFragment"
+        android:name="com.kvsoftware.rxkotlin.connectable.replay.ReplayFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_replay" />
 
 </navigation>

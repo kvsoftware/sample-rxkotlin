@@ -47,6 +47,10 @@ class HomeFragment : Fragment() {
                 val action = HomeFragmentDirections.actionHomeFragmentToConditionalAndBooleanFragment()
                 findNavController().navigate(action)
             }
+            buttonConnectable.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToConnectableFragment()
+                findNavController().navigate(action)
+            }
         }
         return binding.root
     }
